@@ -1,0 +1,19 @@
+{
+  "name": "ultranote",
+  "authors": [
+    "Alex Aralis <alex.aralis@gmail.com>"
+  ],
+  "description": "A mean stack that intefaces with the meganote API",
+  "license": "MIT",
+  "homepage": "git@github.com:Alex-Aralis/ultranote.git",
+  "private": false,
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-loader": "^1.5.7",
+    "angular-ui-router": "^0.3.1",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.3",
+    "textAngular": "^1.5.1",
+    "angular-flash-alert": "^2.3.0"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "ultranote",
+  "version": "0.0.0",
+  "description": "An interface with the meganote api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Alex-Aralis/ultranote.git"
+  },
+  "author": "Alex Aralis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alex-Aralis/ultranote/issues"
+  },
+  "homepage": "https://github.com/Alex-Aralis/ultranote#readme",
+  "dependencies":{
+    "bower": "^1.7.9"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  },
+  "scripts":{
+    "start": "http-server app",
+    "dev": "http-server app -a localhost -p 8000 -c-1",
+    "postinstall": "node_modules/bower/bin/bower install",
+    "preupdate-webdriver": "npm install"
+  }
+}
