@@ -1,0 +1,8 @@
+export PATH="$(pwd)/node_modules/.bin:$PATH"
+
+PS1=$(node -e "
+    console.log(
+        require('./package.json').name + 
+        ' [' + require('./package.json').version + '] '
+    )
+")

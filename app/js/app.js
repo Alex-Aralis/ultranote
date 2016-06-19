@@ -3,10 +3,14 @@
         'ui.router'
     ]);
 
-    function config($urlRouterProvider){
-        $urlRouterProvider.otherwise('/notes/');
+    config.$inject = ['$urlRouterProvider', '$urlMatcherFactory'];
+    function config($urlRouterProvider, $urlMatcherFactory){
+        $urlMatcherFactory.caseInsencitive(true);
+
+        $urlRouterProvider.when('/note/', '/notes/');
+
+        $urlRouterProvider.otherwise('/home/');
     }
 
-    config.$inject = ['$urlRouterProvider'];
     app.config(config);
 })();
