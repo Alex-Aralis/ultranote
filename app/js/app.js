@@ -1,16 +1,21 @@
 (function(){
-    var app = angular.module('ultranote', [
-        'ui.router'
+    var app = angular.module('fathersday', [
+        'ui.router',
+        'fathersday.envelope'
     ]);
 
-    config.$inject = ['$urlRouterProvider', '$urlMatcherFactory'];
-    function config($urlRouterProvider, $urlMatcherFactory){
-        $urlMatcherFactory.caseInsencitive(true);
+    config.$inject = ['$urlRouterProvider', '$urlMatcherFactoryProvider'];
+    function config($urlRouterProvider, $urlMatcherFactoryProvider){
+        //$urlMatcherFactoryProvider.caseInsensitive(true);
 
-        $urlRouterProvider.when('/note/', '/notes/');
+        //$urlRouterProvider.when('/envelope/', '//');
 
-        $urlRouterProvider.otherwise('/home/');
+        //$urlRouterProvider.otherwise('/envelope');
     }
 
     app.config(config);
+
+    app.run(['$urlMatcherFactory', function($urlMatcherFactory){
+        //$urlMatcherFactory.caseInsensitive(true);
+    }]);
 })();

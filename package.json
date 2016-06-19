@@ -1,5 +1,5 @@
 {
-  "name": "ultranote",
+  "name": "fathersday",
   "version": "0.0.0",
   "description": "An interface with the meganote api",
   "main": "app.js",
@@ -7,7 +7,7 @@
     "enter-env": "bash --rcfile scripts/bash_env",
     "start": "http-server app -p 80",
     "dev": "http-server app -a localhost -p 8000 -c-1",
-    "postinstall": "node_modules/bower/bin/bower install",
+    "postinstall": "bower install",
     "preupdate-webdriver": "npm install"
   },
   "repository": {
@@ -24,7 +24,6 @@
     "bower": "^1.7.9"
   },
   "devDependencies": {
-    "http-server": "^0.9.0",
-    "supervisor": "^0.11.0"
+    "http-server": "^0.9.0"
   }
 }
