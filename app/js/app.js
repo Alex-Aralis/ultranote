@@ -1,7 +1,9 @@
 (function(){
     var app = angular.module('fathersday', [
         'ui.router',
-        'fathersday.envelope'
+        'fathersday.envelope',
+        'fathersday.letter',
+        'fathersday.github',
     ]);
 
     config.$inject = ['$urlRouterProvider', '$urlMatcherFactoryProvider'];

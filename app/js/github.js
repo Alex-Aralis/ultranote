@@ -1,19 +1,18 @@
 (function(){
-    angular.module('fathersday.envelope', [
+    angular.module('fathersday.github', [
         'ui.router',
         'fathersday.loadingbar',
     ])
 
     .config(['$stateProvider', function($stateProvider){
         $stateProvider
-            
-        .state('envelope',{
-            url: '/envelope',
-            templateUrl: 'views/envelope.html',
+
+        .state('github', {
+            url: '/github',
+            templateUrl: 'views/github.html',
             controller: ['loadingbar', function(loadingbar){
-                loadingbar.setProgress(33);
+                loadingbar.setProgress(100);
             }],
         });
-            
-    }])
-})();
+    }]);
+})()
