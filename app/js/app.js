@@ -12,7 +12,7 @@
 
         //$urlRouterProvider.when('/envelope/', '//');
 
-        //$urlRouterProvider.otherwise('/envelope');
+        $urlRouterProvider.otherwise('/envelope');
     }
 
     app.config(config);
